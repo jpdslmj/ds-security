@@ -71,7 +71,7 @@
         </dependency>
         <!--
         <dependency>
-            <groupId>com.github.wxiaoqi</groupId>
+            <groupId>com.github.lmj</groupId>
             <artifactId>ace-cache</artifactId>
             <version>0.0.2</version>
         </dependency>

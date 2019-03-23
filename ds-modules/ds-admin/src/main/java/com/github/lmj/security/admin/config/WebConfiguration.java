@@ -23,11 +23,14 @@ public class WebConfiguration implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
+
         registry.addInterceptor(getServiceAuthRestInterceptor())
                 .addPathPatterns(getIncludePathPatterns())
                 .addPathPatterns("/api/user/validate");
+
         registry.addInterceptor(getUserAuthRestInterceptor())
                 .addPathPatterns(getIncludePathPatterns());
+
     }
 
     @Bean
@@ -42,7 +45,6 @@ public class WebConfiguration implements WebMvcConfigurer {
 
     /**
      * 需要用户和服务认证判断的路径
-     * @return
      */
     private ArrayList<String> getIncludePathPatterns() {
         ArrayList<String> list = new ArrayList<>();

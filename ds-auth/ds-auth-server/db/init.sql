@@ -1,21 +1,7 @@
 
-CREATE DATABASE ag_auth_v1 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-Use ag_auth_v1;
-/*
- Navicat Premium Data Transfer
+CREATE DATABASE ds_auth DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+Use ds_auth;
 
- Source Server         : localhost
- Source Server Type    : MySQL
- Source Server Version : 50718
- Source Host           : localhost
- Source Database       : ag_auth_v1
-
- Target Server Type    : MySQL
- Target Server Version : 50718
- File Encoding         : utf-8
-
- Date: 02/05/2019 21:40:34 PM
-*/
 
 SET NAMES utf8;
 SET FOREIGN_KEY_CHECKS = 0;

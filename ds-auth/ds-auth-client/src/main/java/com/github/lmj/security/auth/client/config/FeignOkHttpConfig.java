@@ -26,9 +26,13 @@ public class FeignOkHttpConfig {
 
 	@Bean
 	public okhttp3.OkHttpClient okHttpClient() {
-		return new okhttp3.OkHttpClient.Builder().readTimeout(feignOkHttpReadTimeout, TimeUnit.SECONDS).connectTimeout(feignConnectTimeout, TimeUnit.SECONDS)
-				.writeTimeout(feignWriteTimeout, TimeUnit.SECONDS).connectionPool(new ConnectionPool())
-				 .addInterceptor(okHttpLoggingInterceptor)
+		return new okhttp3
+				.OkHttpClient.Builder()
+				.readTimeout(feignOkHttpReadTimeout, TimeUnit.SECONDS)
+				.connectTimeout(feignConnectTimeout, TimeUnit.SECONDS)
+				.writeTimeout(feignWriteTimeout, TimeUnit.SECONDS)
+				.connectionPool(new ConnectionPool())
+				.addInterceptor(okHttpLoggingInterceptor)
 				.build();
 	}
 }
