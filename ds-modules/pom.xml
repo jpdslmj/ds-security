@@ -18,6 +18,7 @@
     <modules>
         <module>ds-interface</module>
         <module>ds-tool</module>
+        <module>ds-generator</module>
     </modules>
 
 

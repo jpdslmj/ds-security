@@ -3,12 +3,6 @@ package com.github.lmj.security.api.vo.user;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * ${DESCRIPTION}
- *
- * @author wanghaobin
- * @create 2017-06-21 8:12
- */
 public class UserInfo implements Serializable {
     public String id;
     public String username;

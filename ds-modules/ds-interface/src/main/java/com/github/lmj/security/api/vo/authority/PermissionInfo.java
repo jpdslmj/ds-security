@@ -2,12 +2,7 @@ package com.github.lmj.security.api.vo.authority;
 
 import java.io.Serializable;
 
-/**
- * ${DESCRIPTION}
- *
- * @author wanghaobin
- * @create 2017-06-22 15:19
- */
+
 public class PermissionInfo implements Serializable {
     private String code;
     private String type;

@@ -3,12 +3,7 @@ package com.github.lmj.security.api.vo.log;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * ${DESCRIPTION}
- *
- * @author wanghaobin
- * @create 2017-07-01 11:18
- */
+
 public class LogInfo implements Serializable {
     private String menu;
 
