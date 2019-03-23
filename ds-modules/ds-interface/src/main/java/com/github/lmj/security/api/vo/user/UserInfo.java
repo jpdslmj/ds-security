@@ -9,7 +9,7 @@ import java.util.Date;
  * @author wanghaobin
  * @create 2017-06-21 8:12
  */
-public class UserInfo implements Serializable{
+public class UserInfo implements Serializable {
     public String id;
     public String username;
     public String password;

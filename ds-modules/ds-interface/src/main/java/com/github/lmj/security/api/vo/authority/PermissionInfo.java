@@ -8,7 +8,7 @@ import java.io.Serializable;
  * @author wanghaobin
  * @create 2017-06-22 15:19
  */
-public class PermissionInfo implements Serializable{
+public class PermissionInfo implements Serializable {
     private String code;
     private String type;
     private String uri;
@@ -31,7 +31,6 @@ public class PermissionInfo implements Serializable{
     public void setName(String name) {
         this.name = name;
     }
-
 
 
     public String getMethod() {

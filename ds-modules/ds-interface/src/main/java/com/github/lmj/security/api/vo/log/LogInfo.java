@@ -9,7 +9,7 @@ import java.util.Date;
  * @author wanghaobin
  * @create 2017-07-01 11:18
  */
-public class LogInfo implements Serializable{
+public class LogInfo implements Serializable {
     private String menu;
 
     private String opt;
@@ -26,7 +26,7 @@ public class LogInfo implements Serializable{
 
     private String body;
 
-    public LogInfo(String menu, String option, String uri,  Date crtTime, String crtUser, String crtName, String crtHost,String body) {
+    public LogInfo(String menu, String option, String uri, Date crtTime, String crtUser, String crtName, String crtHost, String body) {
         this.menu = menu;
         this.opt = option;
         this.uri = uri;

@@ -33,105 +33,104 @@ import java.io.Serializable;
  *
  * @author ace
  **/
-public class IndexObject implements Comparable<IndexObject>,Serializable{
-	
-	private Long id;
+public class IndexObject implements Comparable<IndexObject>, Serializable {
 
-	private String title;
+    private Long id;
 
-	private String keywords;
+    private String title;
 
-	private String descripton;
+    private String keywords;
 
-	private String postDate;
+    private String descripton;
 
-	public String getPostDate() {
-		return postDate;
-	}
+    private String postDate;
 
-	public void setPostDate(String postDate) {
-		this.postDate = postDate;
-	}
+    public String getPostDate() {
+        return postDate;
+    }
 
-	public String getDescripton() {
-		return descripton;
-	}
+    public void setPostDate(String postDate) {
+        this.postDate = postDate;
+    }
 
-	public void setDescripton(String descripton) {
-		this.descripton = descripton;
-	}
+    public String getDescripton() {
+        return descripton;
+    }
 
-	private String url;
+    public void setDescripton(String descripton) {
+        this.descripton = descripton;
+    }
 
-	/*相似度*/
-	private float score;
+    private String url;
 
-
-	public String getKeywords() {
-		return keywords;
-	}
-
-	public void setKeywords(String keywords) {
-		this.keywords = keywords;
-	}
-
-	public String getUrl() {
-		return url;
-	}
-
-	public void setUrl(String url) {
-		this.url = url;
-	}
+    /*相似度*/
+    private float score;
 
 
+    public String getKeywords() {
+        return keywords;
+    }
 
-	public String getTitle() {
-		return title;
-	}
+    public void setKeywords(String keywords) {
+        this.keywords = keywords;
+    }
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    public String getUrl() {
+        return url;
+    }
 
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public float getScore() {
-		return score;
-	}
-
-	public  void setScore(float score) {
-		this.score = score;
-	}
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
 
-	
-	public IndexObject() {
-		super();
-	}
+    public String getTitle() {
+        return title;
+    }
 
-	public IndexObject(Long _id, String _keywords, String _descripton, String _postDate, float _score) {
-		super();
-		this.id = _id;
-		this.keywords = _keywords;
-		this.score = _score;
-		this.descripton=_descripton;
-		this.postDate=_postDate;
-	}
-	@Override
-	public int compareTo(IndexObject o) {
-		if(this.score < o.getScore()){
-			return 1;
-		}else if(this.score > o.getScore()){
-			return -1;
-		}
-		return 0;
-	}
-	
-	
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public float getScore() {
+        return score;
+    }
+
+    public void setScore(float score) {
+        this.score = score;
+    }
+
+
+    public IndexObject() {
+        super();
+    }
+
+    public IndexObject(Long _id, String _keywords, String _descripton, String _postDate, float _score) {
+        super();
+        this.id = _id;
+        this.keywords = _keywords;
+        this.score = _score;
+        this.descripton = _descripton;
+        this.postDate = _postDate;
+    }
+
+    @Override
+    public int compareTo(IndexObject o) {
+        if (this.score < o.getScore()) {
+            return 1;
+        } else if (this.score > o.getScore()) {
+            return -1;
+        }
+        return 0;
+    }
+
+
 }

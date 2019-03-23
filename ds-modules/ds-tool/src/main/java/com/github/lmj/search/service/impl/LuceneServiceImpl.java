@@ -37,6 +37,6 @@ public class LuceneServiceImpl implements LuceneService {
 
     @Override
     public TableResultResponse page(Integer pageNumber, Integer pageSize, String keyword) {
-        return luceneDao.page(pageNumber,pageSize,keyword);
+        return luceneDao.page(pageNumber, pageSize, keyword);
     }
 }
