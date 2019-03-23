@@ -13,6 +13,7 @@
     <modules>
         <module>ds-common</module>
         <module>ds-modules</module>
+        <module>ds-auth</module>
     </modules>
 
     <groupId>com.github.lmj</groupId>
