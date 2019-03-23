@@ -36,25 +36,21 @@ public class CacheClearAspect {
     }
 
     @Around("aspect()&&@annotation(anno)")
-    public Object interceptor(ProceedingJoinPoint invocation, CacheClear anno)
-            throws Throwable {
+    public Object interceptor(ProceedingJoinPoint invocation, CacheClear anno) throws Throwable {
         MethodSignature signature = (MethodSignature) invocation.getSignature();
         Method method = signature.getMethod();
         Class<?>[] parameterTypes = method.getParameterTypes();
         Object[] arguments = invocation.getArgs();
         String key = "";
         if (StringUtils.isNotBlank(anno.key())) {
-            key = getKey(anno, anno.key(), CacheScope.application,
-                    parameterTypes, arguments);
+            key = getKey(anno, anno.key(), CacheScope.application, parameterTypes, arguments);
             cacheAPI.remove(key);
         } else if (StringUtils.isNotBlank(anno.pre())) {
-            key = getKey(anno, anno.pre(), CacheScope.application,
-                    parameterTypes, arguments);
+            key = getKey(anno, anno.pre(), CacheScope.application, parameterTypes, arguments);
             cacheAPI.removeByPre(key);
         } else if (anno.keys().length > 1) {
             for (String tmp : anno.keys()) {
-                tmp = getKey(anno, tmp, CacheScope.application, parameterTypes,
-                        arguments);
+                tmp = getKey(anno, tmp, CacheScope.application, parameterTypes, arguments);
                 cacheAPI.removeByPre(tmp);
             }
         }
@@ -71,8 +67,7 @@ public class CacheClearAspect {
      * @throws InstantiationException
      * @throws IllegalAccessException
      */
-    private String getKey(CacheClear anno, String key, CacheScope scope,
-                          Class<?>[] parameterTypes, Object[] arguments)
+    private String getKey(CacheClear anno, String key, CacheScope scope, Class<?>[] parameterTypes, Object[] arguments)
             throws InstantiationException, IllegalAccessException {
         String finalKey;
         String generatorClsName = anno.generator().getName();

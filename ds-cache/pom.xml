@@ -14,6 +14,8 @@
     <version>1.0</version>
     <name>ds-cache</name>
 
+    <packaging>jar</packaging>
+
     <properties>
         <java.version>1.8</java.version>
 
@@ -84,6 +86,8 @@
         </dependency>
 
     </dependencies>
+
+    <!--
     <scm>
         <connection>scm:git:https://github.com/jpdslmj/ds-cache.git</connection>
         <developerConnection>scm:git:https://github.com/jpdslmj/ds-cache.git</developerConnection>
@@ -106,6 +110,8 @@
             <url>https://oss.sonatype.org/service/local/staging/deploy/maven2</url>
         </repository>
     </distributionManagement>
+    -->
+
     <build>
         <plugins>
             <plugin>

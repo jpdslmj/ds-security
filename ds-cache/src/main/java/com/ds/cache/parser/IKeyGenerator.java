@@ -17,15 +17,13 @@ public abstract class IKeyGenerator {
      * @param arguments
      * @return
      */
-    public String getKey(String key, CacheScope scope,
-                         Class<?>[] parameterTypes, Object[] arguments) {
+    public String getKey(String key, CacheScope scope, Class<?>[] parameterTypes, Object[] arguments) {
         StringBuffer sb = new StringBuffer("");
         key = buildKey(key, scope, parameterTypes, arguments);
         sb.append(key);
         if (CacheScope.user.equals(scope)) {
             if (getUserKeyGenerator() != null)
-                sb.append(LINK)
-                        .append(getUserKeyGenerator().getCurrentUserAccount());
+                sb.append(LINK).append(getUserKeyGenerator().getCurrentUserAccount());
         }
         return sb.toString();
     }
@@ -46,6 +44,5 @@ public abstract class IKeyGenerator {
      * @param arguments
      * @return
      */
-    public abstract String buildKey(String key, CacheScope scope,
-                                    Class<?>[] parameterTypes, Object[] arguments);
+    public abstract String buildKey(String key, CacheScope scope, Class<?>[] parameterTypes, Object[] arguments);
 }

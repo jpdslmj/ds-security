@@ -8,8 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 public class CacheWebConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
-        registry.addResourceHandler("/static/cache/**").addResourceLocations(
-                "classpath:/META-INF/static/");
+        registry.addResourceHandler("/static/cache/**").addResourceLocations("classpath:/META-INF/static/");
         super.addResourceHandlers(registry);
     }
 }

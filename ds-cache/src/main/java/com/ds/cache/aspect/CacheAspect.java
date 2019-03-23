@@ -40,6 +40,7 @@ public class CacheAspect {
     @Around("aspect()&&@annotation(anno)")
     public Object interceptor(ProceedingJoinPoint invocation, Cache anno)
             throws Throwable {
+
         MethodSignature signature = (MethodSignature) invocation.getSignature();
         Method method = signature.getMethod();
         Object result = null;
@@ -75,9 +76,9 @@ public class CacheAspect {
      * @throws InstantiationException
      * @throws IllegalAccessException
      */
-    private String getKey(Cache anno, Class<?>[] parameterTypes,
-                          Object[] arguments) throws InstantiationException,
-            IllegalAccessException {
+    private String getKey(Cache anno, Class<?>[] parameterTypes, Object[] arguments)
+            throws InstantiationException,  IllegalAccessException {
+
         String key;
         String generatorClsName = anno.generator().getName();
         IKeyGenerator keyGenerator = null;
@@ -92,9 +93,9 @@ public class CacheAspect {
             }
         }
 
-        key = keyGenerator.getKey(anno.key(), anno.scope(), parameterTypes,
-                arguments);
+        key = keyGenerator.getKey(anno.key(), anno.scope(), parameterTypes, arguments);
         return key;
+
     }
 
     /**
@@ -108,9 +109,9 @@ public class CacheAspect {
      * @throws InstantiationException
      * @throws IllegalAccessException
      */
-    private Object getResult(Cache anno, Object result, String value,
-                             Type returnType) throws InstantiationException,
-            IllegalAccessException {
+    private Object getResult(Cache anno, Object result, String value, Type returnType)
+            throws InstantiationException, IllegalAccessException {
+
         String parserClsName = anno.parser().getName();
         ICacheResultParser parser = null;
         if (parserMap.containsKey(parserClsName)) {
@@ -121,11 +122,9 @@ public class CacheAspect {
         }
         if (parser != null) {
             if (anno.result()[0].equals(Object.class)) {
-                result = parser.parse(value, returnType,
-                        null);
+                result = parser.parse(value, returnType, null);
             } else {
-                result = parser.parse(value, returnType,
-                        anno.result());
+                result = parser.parse(value, returnType, anno.result());
             }
         }
         return result;
