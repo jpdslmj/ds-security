@@ -4,9 +4,7 @@ import com.github.lmj.security.api.vo.authority.PermissionInfo;
 
 import java.util.List;
 
-/**
- * Created by ace on 2017/8/22.
- */
+
 public class FrontUser {
     public String id;
     public String username;

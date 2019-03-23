@@ -1,6 +1,6 @@
 package com.github.lmj.security.admin;
 
-import com.ace.cache.EnableAceCache;
+import com.ds.cache.EnableDsCache;
 import com.github.lmj.security.auth.client.EnableAceAuthClient;
 import com.spring4all.swagger.EnableSwagger2Doc;
 import org.mybatis.spring.annotation.MapperScan;
@@ -19,11 +19,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableFeignClients({"com.github.lmj.security.auth.client.feign"})
 @EnableScheduling
 @EnableAceAuthClient
-@EnableAceCache
+@EnableDsCache
 @EnableTransactionManagement
 @MapperScan("com.github.lmj.security.admin.mapper")
 @EnableSwagger2Doc
 public class AdminBootstrap {
     public static void main(String[] args) {
-        new SpringApplicationBuilder(AdminBootstrap.class).run(args);    }
+        new SpringApplicationBuilder(AdminBootstrap.class).run(args);
+    }
 }

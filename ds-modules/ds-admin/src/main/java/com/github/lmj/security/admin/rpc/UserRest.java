@@ -1,6 +1,6 @@
 package com.github.lmj.security.admin.rpc;
 
-import com.ace.cache.annotation.Cache;
+import com.ds.cache.annotation.Cache;
 import com.github.lmj.security.admin.rpc.service.PermissionService;
 import com.github.lmj.security.api.vo.authority.PermissionInfo;
 import com.github.lmj.security.api.vo.user.UserInfo;

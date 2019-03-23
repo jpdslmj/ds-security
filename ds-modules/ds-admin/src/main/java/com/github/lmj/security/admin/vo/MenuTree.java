@@ -2,9 +2,7 @@ package com.github.lmj.security.admin.vo;
 
 import com.github.lmj.security.common.vo.TreeNode;
 
-/**
- * Created by Ace on 2017/6/12.
- */
+
 public class MenuTree extends TreeNode {
     String icon;
     String title;

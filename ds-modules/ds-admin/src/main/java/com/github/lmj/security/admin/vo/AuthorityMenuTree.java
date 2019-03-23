@@ -7,12 +7,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * ${DESCRIPTION}
- *
- * @author wanghaobin
- * @create 2017-06-19 13:03
- */
+
 public class AuthorityMenuTree extends TreeNode implements Serializable{
     String text;
     List<AuthorityMenuTree> nodes = new ArrayList<AuthorityMenuTree>();

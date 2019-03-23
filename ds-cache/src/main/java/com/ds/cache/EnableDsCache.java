@@ -10,5 +10,5 @@ import java.lang.annotation.*;
 @Import(AutoConfiguration.class)
 @Documented
 @Inherited
-public @interface EnableAceCache {
+public @interface EnableDsCache {
 }

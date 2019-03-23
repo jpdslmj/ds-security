@@ -2,12 +2,7 @@ package com.github.lmj.security.admin.vo;
 
 import com.github.lmj.security.common.vo.TreeNode;
 
-/**
- * ${DESCRIPTION}
- *
- * @author wanghaobin
- * @create 2017-06-17 15:21
- */
+
 public class GroupTree extends TreeNode {
     String label;
 

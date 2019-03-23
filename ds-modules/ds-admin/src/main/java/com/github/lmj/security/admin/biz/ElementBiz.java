@@ -1,7 +1,7 @@
 package com.github.lmj.security.admin.biz;
 
-import com.ace.cache.annotation.Cache;
-import com.ace.cache.annotation.CacheClear;
+import com.ds.cache.annotation.Cache;
+import com.ds.cache.annotation.CacheClear;
 import com.github.lmj.security.admin.entity.Element;
 import com.github.lmj.security.admin.mapper.ElementMapper;
 import com.github.lmj.security.common.biz.BaseBiz;
@@ -10,12 +10,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * ${DESCRIPTION}
- *
- * @author wanghaobin
- * @create 2017-06-23 20:27
- */
 @Service
 @Transactional(rollbackFor = Exception.class)
 public class ElementBiz extends BaseBiz<ElementMapper, Element> {

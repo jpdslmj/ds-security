@@ -63,19 +63,19 @@
             <artifactId>ds-auth-client</artifactId>
             <version>1.0</version>
         </dependency>
-        <!--
+
         <dependency>
             <groupId>com.github.lmj</groupId>
             <artifactId>ds-cache</artifactId>
-            <version>0.0.2</version>
+            <version>1.0</version>
         </dependency>
-        -->
+        <!--
         <dependency>
             <groupId>com.github.wxiaoqi</groupId>
             <artifactId>ace-cache</artifactId>
             <version>0.0.2</version>
         </dependency>
-
+        -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>

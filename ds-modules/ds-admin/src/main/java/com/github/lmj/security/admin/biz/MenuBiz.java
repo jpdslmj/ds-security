@@ -1,7 +1,7 @@
 package com.github.lmj.security.admin.biz;
 
-import com.ace.cache.annotation.Cache;
-import com.ace.cache.annotation.CacheClear;
+import com.ds.cache.annotation.Cache;
+import com.ds.cache.annotation.CacheClear;
 import com.github.lmj.security.admin.mapper.MenuMapper;
 import com.github.lmj.security.admin.constant.AdminCommonConstant;
 import com.github.lmj.security.admin.entity.Menu;
@@ -11,12 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * ${DESCRIPTION}
- *
- * @author wanghaobin
- * @create 2017-06-12 8:48
- */
+
 @Service
 @Transactional(rollbackFor = Exception.class)
 public class MenuBiz extends BaseBiz<MenuMapper, Menu> {
