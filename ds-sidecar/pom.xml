@@ -13,6 +13,7 @@
     <artifactId>ds-sidecar</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
+    <description>调⽤用第三⽅方语⾔言</description>
 
     <modules>
         <module>ds-sidecar-server</module>

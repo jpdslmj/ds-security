@@ -10,7 +10,7 @@
 
     <artifactId>ds-auth</artifactId>
     <packaging>pom</packaging>
-
+    <description>服务鉴权中⼼心</description>
     <modules>
         <module>ds-auth-client</module>
         <module>ds-auth-server</module>

@@ -12,6 +12,7 @@
     <artifactId>ds-control</artifactId>
     <packaging>pom</packaging>
 
+    <description>运维中⼼心（监控、链路路）</description>
     <modules>
         <module>ds-monitor</module>
     </modules>
