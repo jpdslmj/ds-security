@@ -12,8 +12,8 @@
     <groupId>com.github.lmj</groupId>
     <artifactId>ds-cache</artifactId>
     <version>1.0</version>
-    <name>ds-cache</name>
 
+    <name>ds-cache</name>
     <packaging>jar</packaging>
 
     <properties>

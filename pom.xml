@@ -15,6 +15,7 @@
         <module>ds-modules</module>
         <module>ds-auth</module>
         <module>ds-gateway</module>
+        <module>ds-control</module>
     </modules>
 
     <groupId>com.github.lmj</groupId>

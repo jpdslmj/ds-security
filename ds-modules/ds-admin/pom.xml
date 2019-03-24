@@ -76,6 +76,9 @@
             <version>0.0.2</version>
         </dependency>
         -->
+
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-jdbc</artifactId>
@@ -191,7 +194,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>ace-admin</finalName>
+        <finalName>ds-admin</finalName>
         <plugins>
             <!-- 此插件用来生成通用mapper的代码 -->
             <plugin>

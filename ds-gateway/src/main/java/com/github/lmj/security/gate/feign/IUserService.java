@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.List;
 
 
-@FeignClient(value = "ace-admin",fallback = UserServiceFallback.class)
+@FeignClient(value = "ds-admin",fallback = UserServiceFallback.class)
 public interface IUserService {
   @RequestMapping(value="/api/user/un/{username}/permissions",method = RequestMethod.GET)
   public List<PermissionInfo> getPermissionByUsername(@PathVariable("username") String username);

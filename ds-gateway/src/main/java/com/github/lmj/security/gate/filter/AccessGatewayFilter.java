@@ -58,8 +58,8 @@ public class AccessGatewayFilter implements GlobalFilter {
     @Value("${gate.ignore.startWith}")
     private String startWith;
 
-    //    @Value("${zuul.prefix}")
-//    private String zuulPrefix;
+    // @Value("${zuul.prefix}")
+    // private String zuulPrefix;
 
     private static final String GATE_WAY_PREFIX = "/api";
     @Autowired
@@ -111,7 +111,7 @@ public class AccessGatewayFilter implements GlobalFilter {
         PermissionInfo[] permissions = result.toArray(new PermissionInfo[]{});
         if (permissions.length > 0) {
             if (checkUserPermission(permissions, serverWebExchange, user)) {
-                return getVoidMono(serverWebExchange, new TokenForbiddenResponse("User Forbidden!Does not has Permission!"));
+                return getVoidMono(serverWebExchange, new TokenForbiddenResponse("User Forbidden! Does not has Permission!"));
             }
         }
         // 申请客户端密钥头
@@ -152,8 +152,7 @@ public class AccessGatewayFilter implements GlobalFilter {
                     uri = uri.replaceAll("\\{\\*\\}", "[a-zA-Z\\\\d]+");
                 }
                 String regEx = "^" + uri + "$";
-                return (Pattern.compile(regEx).matcher(requestUri).find())
-                        && method.equals(permissionInfo.getMethod());
+                return (Pattern.compile(regEx).matcher(requestUri).find()) && method.equals(permissionInfo.getMethod());
             }
         });
     }

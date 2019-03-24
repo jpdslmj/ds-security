@@ -39,8 +39,7 @@ import java.util.function.Predicate;
 import static org.springframework.cloud.gateway.filter.AdaptCachedBodyGlobalFilter.CACHED_REQUEST_BODY_KEY;
 
 
-public class RequestBodyRoutePredicateFactory
-        extends AbstractRoutePredicateFactory<RequestBodyRoutePredicateFactory.Config> {
+public class RequestBodyRoutePredicateFactory extends AbstractRoutePredicateFactory<RequestBodyRoutePredicateFactory.Config> {
     protected static final Log LOGGER = LogFactory.getLog(ReadBodyPredicateFactory.class);
     private static final List<HttpMessageReader<?>> messageReaders = HandlerStrategies.withDefaults().messageReaders();
     public static final String REQUEST_BODY_ATTR = "requestBodyAttr";
@@ -60,8 +59,7 @@ public class RequestBodyRoutePredicateFactory
                     return Mono.just(true);
                 } catch (ClassCastException e) {
                     if (LOGGER.isDebugEnabled()) {
-                        LOGGER.debug("Predicate test failed because class in predicate does not match the cached body object",
-                                e);
+                        LOGGER.debug("Predicate test failed because class in predicate does not match the cached body object", e);
                     }
                 }
                 return Mono.just(true);
@@ -91,8 +89,7 @@ public class RequestBodyRoutePredicateFactory
 
     @Override
     public Predicate<ServerWebExchange> apply(Config config) {
-        throw new UnsupportedOperationException(
-                "ReadBodyPredicateFactory is only async.");
+        throw new UnsupportedOperationException("ReadBodyPredicateFactory is only async.");
     }
 
     public static class Config {

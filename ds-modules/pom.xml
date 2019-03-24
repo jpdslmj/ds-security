@@ -10,10 +10,8 @@
         <version>1.0</version>
     </parent>
 
-    <groupId>com.github.lmj</groupId>
     <artifactId>ds-modules</artifactId>
     <packaging>pom</packaging>
-    <version>1.0</version>
 
     <modules>
         <module>ds-interface</module>

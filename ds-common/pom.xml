@@ -9,11 +9,7 @@
         <version>1.0</version>
     </parent>
 
-    <groupId>com.github.lmj</groupId>
     <artifactId>ds-common</artifactId>
-    <packaging>jar</packaging>
-    <version>1.0</version>
-
 
     <name>ds-common</name>
     <description>通用脚手架</description>
