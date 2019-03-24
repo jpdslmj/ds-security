@@ -1,8 +1,8 @@
 package com.github.lmj.security.gate.filter;
 
 import com.alibaba.fastjson.JSONObject;
-import com.github.lmj.security.api.vo.authority.PermissionInfo;
-import com.github.lmj.security.api.vo.log.LogInfo;
+import com.github.lmj.security.common.vo.PermissionInfo;
+import com.github.lmj.security.common.vo.LogInfo;
 import com.github.lmj.security.auth.client.config.ServiceAuthConfig;
 import com.github.lmj.security.auth.client.config.UserAuthConfig;
 import com.github.lmj.security.auth.client.jwt.ServiceAuthUtil;

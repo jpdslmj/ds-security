@@ -2,7 +2,7 @@ package com.github.lmj.security.admin.rpc;
 
 import com.github.lmj.security.admin.biz.GateLogBiz;
 import com.github.lmj.security.admin.entity.GateLog;
-import com.github.lmj.security.api.vo.log.LogInfo;
+import com.github.lmj.security.common.vo.LogInfo;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

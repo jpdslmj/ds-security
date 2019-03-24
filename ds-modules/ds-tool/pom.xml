@@ -112,11 +112,6 @@
             <optional>true</optional>
         </dependency>
 
-        <dependency>
-            <groupId>com.github.lmj</groupId>
-            <artifactId>ds-interface</artifactId>
-            <version>1.0</version>
-        </dependency>
 
         <dependency>
             <groupId>com.github.lmj</groupId>

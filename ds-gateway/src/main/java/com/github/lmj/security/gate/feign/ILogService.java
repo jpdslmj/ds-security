@@ -1,6 +1,6 @@
 package com.github.lmj.security.gate.feign;
 
-import com.github.lmj.security.api.vo.log.LogInfo;
+import com.github.lmj.security.common.vo.LogInfo;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

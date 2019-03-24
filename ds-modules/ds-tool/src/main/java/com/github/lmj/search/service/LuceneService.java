@@ -1,8 +1,8 @@
 package com.github.lmj.search.service;
 
 
-import com.github.lmj.security.api.vo.search.IndexObject;
 import com.github.lmj.security.common.msg.TableResultResponse;
+import com.github.lmj.security.common.vo.IndexObject;
 
 /**
  * lucense 接口

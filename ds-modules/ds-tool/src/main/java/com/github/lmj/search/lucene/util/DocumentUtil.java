@@ -1,6 +1,7 @@
 package com.github.lmj.search.lucene.util;
 
-import com.github.lmj.security.api.vo.search.IndexObject;
+
+import com.github.lmj.security.common.vo.IndexObject;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.document.Document;

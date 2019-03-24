@@ -1,4 +1,4 @@
-package com.github.lmj.security.api.vo.log;
+package com.github.lmj.security.common.vo;
 
 import java.io.Serializable;
 import java.util.Date;

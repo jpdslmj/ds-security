@@ -1,9 +1,9 @@
 package com.github.lmj.search.controller;
 
 import com.github.lmj.search.service.LuceneService;
-import com.github.lmj.security.api.vo.search.IndexObject;
 import com.github.lmj.security.common.msg.ObjectRestResponse;
 import com.github.lmj.security.common.msg.TableResultResponse;
+import com.github.lmj.security.common.vo.IndexObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

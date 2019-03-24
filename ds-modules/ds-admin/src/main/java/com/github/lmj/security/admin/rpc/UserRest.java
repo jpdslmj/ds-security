@@ -2,8 +2,8 @@ package com.github.lmj.security.admin.rpc;
 
 import com.ds.cache.annotation.Cache;
 import com.github.lmj.security.admin.rpc.service.PermissionService;
-import com.github.lmj.security.api.vo.authority.PermissionInfo;
-import com.github.lmj.security.api.vo.user.UserInfo;
+import com.github.lmj.security.common.vo.PermissionInfo;
+import com.github.lmj.security.common.vo.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

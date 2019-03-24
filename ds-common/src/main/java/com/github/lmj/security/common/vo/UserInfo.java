@@ -1,4 +1,4 @@
-package com.github.lmj.security.api.vo.user;
+package com.github.lmj.security.common.vo;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -1,10 +1,11 @@
 package com.github.lmj.search.lucene;
 
-import com.github.lmj.security.api.vo.search.IndexObject;
+
 import com.github.lmj.search.lucene.util.DocumentUtil;
 import com.github.lmj.search.lucene.util.IKAnalyzer5x;
 import com.github.lmj.search.lucene.util.QueryUtil;
 import com.github.lmj.security.common.msg.TableResultResponse;
+import com.github.lmj.security.common.vo.IndexObject;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.*;

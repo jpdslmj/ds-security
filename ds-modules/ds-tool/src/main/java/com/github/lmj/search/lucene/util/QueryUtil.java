@@ -7,12 +7,7 @@ import org.apache.lucene.queryparser.classic.QueryParser;
 import org.apache.lucene.search.BooleanQuery;
 import org.apache.lucene.search.Query;
 
-/**
- * Description:query util
- *
- * @author ace
- * @create 2017-05-19
- **/
+
 public class QueryUtil {
 
     private static String queryStringFilter(String query) {

@@ -1,7 +1,7 @@
 package com.github.lmj.security.gate.utils;
 
 import com.github.lmj.security.gate.feign.ILogService;
-import com.github.lmj.security.api.vo.log.LogInfo;
+import com.github.lmj.security.common.vo.LogInfo;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.ArrayList;

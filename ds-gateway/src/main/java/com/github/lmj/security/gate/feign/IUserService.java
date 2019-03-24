@@ -1,7 +1,7 @@
 package com.github.lmj.security.gate.feign;
 
 import com.github.lmj.security.gate.fallback.UserServiceFallback;
-import com.github.lmj.security.api.vo.authority.PermissionInfo;
+import com.github.lmj.security.common.vo.PermissionInfo;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

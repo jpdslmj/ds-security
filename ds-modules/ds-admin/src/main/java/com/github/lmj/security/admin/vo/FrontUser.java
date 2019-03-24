@@ -1,6 +1,6 @@
 package com.github.lmj.security.admin.vo;
 
-import com.github.lmj.security.api.vo.authority.PermissionInfo;
+import com.github.lmj.security.common.vo.PermissionInfo;
 
 import java.util.List;
 

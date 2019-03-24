@@ -1,7 +1,7 @@
 package com.github.lmj.security.gate.fallback;
 
 import com.github.lmj.security.gate.feign.IUserService;
-import com.github.lmj.security.api.vo.authority.PermissionInfo;
+import com.github.lmj.security.common.vo.PermissionInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.PathVariable;
